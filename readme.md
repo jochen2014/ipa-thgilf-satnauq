@@ -1,4 +1,28 @@
-## how to run the code and execute tests
+# summary
+## time
+total time :  2 hours 46 minutes
+```
+$ git show 8d30ba7 -s #first commit
+commit 8d30ba7469550ef90fe864cd1f56afc376912e39
+Author: Bo Chen <bochen2014@yahoo.com>
+Date:   Sat Jul 1 13:23:27 2017 +1000
+start from scratch
+
+$ git show bdd642d  -s #last commit
+commit bdd642da70998644049bb1763ec6922dadb52810
+Author: Bo Chen <bochen2014@yahoo.com>
+Date:   Sat Jul 1 16:09:49 2017 +1000
+very smooth deployment experience to heroku. no drama at all
+
+```
+
+## comments:
+1. overall it's a good test. requirement is clear and not complicated
+2. it seems to be a pure backend tech test. no front-end skills involved at all
+3. just FYI. I built [this](https://my-trips.azurewebsites.net/) for one of my personal projects. after this test, I think I may deploy it to heroku as I find it takes lesser time to wake up after website been idle and forced to sleep
+   
+
+# how to run the code and execute tests
 ```
 npm install
 npm start

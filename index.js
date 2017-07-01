@@ -5,7 +5,7 @@ import flightRoute from './routes/flightRoute';
 
 
 const app = express();
-const port = process.env.port || 8000;
+const port = process.env.PORT || 8000;
 
 app.use(bodyParser.json());
 app.use(flightRoute);

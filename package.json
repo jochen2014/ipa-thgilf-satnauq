@@ -1,0 +1,23 @@
+{
+  "name": "ipa-thgilf-satnauq",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jochen2014/ipa-thgilf-satnauq.git"
+  },
+  "keywords": [
+    "hidden",
+    "you are not supposed to see me"
+  ],
+  "author": "bo chen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jochen2014/ipa-thgilf-satnauq/issues"
+  },
+  "homepage": "https://github.com/jochen2014/ipa-thgilf-satnauq#readme"
+}

@@ -7,7 +7,7 @@ const filterFlight = (req, res, next) => {
             flights: [],
         });
     } else {
-        const result = service.filterFlight();
+        const result = service.filterFlight(flights, 'QF', 'SYD');
         res.json(result);
     }
 };

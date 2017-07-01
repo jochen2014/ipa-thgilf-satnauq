@@ -8,8 +8,10 @@ const filterFlight = (req, res, next) => {
         });
     } else {
         try {
-            const result = service.filterFlight(flights, 'QF', 'SYD');
-            res.json(result);
+            const filteredFlights = service.filterFlight(flights, 'QF', 'SYD');
+            res.json({
+                flights: filteredFlights,
+            });
         } catch (error) {
             // swallow 500 and replace with 400
             const err = new SyntaxError('invalid flight JSON');

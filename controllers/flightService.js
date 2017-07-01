@@ -12,9 +12,7 @@ const filterFlight = (flights, airline, city) => {
             departureTime: f.departure.scheduled,
         }));
 
-    return {
-        flights: results,
-    };
+    return results;
 };
 
 export {

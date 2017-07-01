@@ -7,8 +7,15 @@ const filterFlight = (req, res, next) => {
             flights: [],
         });
     } else {
-        const result = service.filterFlight(flights, 'QF', 'SYD');
-        res.json(result);
+        try {
+            const result = service.filterFlight(flights, 'QF', 'SYD');
+            res.json(result);
+        } catch (error) {
+            // swallow 500 and replace with 400
+            const err = new SyntaxError('invalid flight JSON');
+            err.status = 400;
+            throw err;
+        }
     }
 };
 

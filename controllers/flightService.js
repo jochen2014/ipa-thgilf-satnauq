@@ -3,8 +3,8 @@ const filterFlight = (flights, airline, city) => {
         .filter(f =>
             f.airline.toUpperCase() === airline
             && (f.departure.airport.toUpperCase() === city
-                || f.arrival.airport.toUpperCase() === city)
-        )
+                || f.arrival.airport.toUpperCase() === city),
+    )
         .map(f => ({
             flight: f.airline + f.flightNumber,
             origin: f.departure.airport,

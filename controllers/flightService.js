@@ -7,7 +7,7 @@ const filterFlight = (flights, airline, city) => {
         )
         .map(f => ({
             flight: f.airline + f.flightNumber,
-            orgiin: f.departure.airport,
+            origin: f.departure.airport,
             destination: f.arrival.airport,
             departureTime: f.departure.scheduled,
         }));
